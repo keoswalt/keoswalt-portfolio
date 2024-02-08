@@ -1,0 +1,130 @@
+---
+layout: base.njk
+---
+
+    <main>
+        <section class="case-study-hero | padding-block-999" data-color="blue">
+            <div class="container">
+                <div class="even-columns">
+                    <div class="project-title">
+                        <h1 class="fs-page-title ff-accent">{{ title }}</h1>
+                        <p class="fs-primary-subhead">{{ summary }}</p>
+                    </div>
+                    <div class="details-wrapper">
+                        <div class="vertical-divider" data-color="light"></div>
+                        <div class="project-details">
+                            <div class="project-data">
+                                <p class="fw-bold">Timeline</p>
+                                <p>{{ timeline }}</p>
+                            </div>
+                            <div class="project-data">
+                                <p class="fw-bold">Deliverables</p>
+                                <p>{{ deliverables }}</p>
+                            </div>
+                            <div class="project-data">
+                                <p class="fw-bold">Impact</p>
+                                <p>{{ impact }}</p>
+                            </div>
+                            <div class="project-data">
+                                <p class="fw-bold">Categories</p>
+                                <div class="tag-stack">
+                                    <p class="tag" data-color="light">{{ category1 }}</p>
+                                    <p class="tag" data-color="light">{{ category2 }}</p>
+                                    <p class="tag" data-color="light">{{ category3 }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-image padding-top-100 padding-bottom-100">
+                    <img src="{{ featuredImage }}" alt="{{ featuredImageAlt }}">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-100 padding-block-500 text-secondary-100">
+            <div class="container">
+                <div class="banner flex-justify-end">
+                    <a href="{{ link }}" class="banner-contents">
+                        <p class="fs-body-h2 fw-bold">Visit the Site</p>
+                        <img class="icon-arrow" src="/assets/icons/arrow-up.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-block-900">
+            <div class="container">
+                <div class="content-wrapper">
+                      {{ content | safe }}    
+                </div>
+            </div>
+
+        </section>
+
+  
+
+        {# <section class="padding-block-900">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <h2 class="fs-body-h2 fw-semi-bold">Background</h2>
+                        <p class="fs-body">This is some text</p>
+                        <h3 class="fs-body-h3 fw-semi-bold">I'm an H3</h3>
+                        <ol>
+                            <li>List item</li>
+                            <li>List item</li>
+                        </ol>
+                        <ul>
+                            <li>List item</li>
+                            <li>List item</li>
+                        </ul>
+                    </div>
+                    <div class="content-image" data-width="default">
+                        <img src="/assets/aspire/aspire-homepage.png" alt="">
+                        <p class="fs-small italics text-primary-50">This is a caption</p>
+                    </div>
+                    <div class="text-block">
+                        <h2 class="fs-body-h2 fw-semi-bold">Background</h2>
+                        <p class="fs-body">This is some text</p>
+                        <h3 class="fs-body-h3 fw-semi-bold">I'm an H3</h3>
+                        <ol>
+                            <li>List item</li>
+                            <li>List item</li>
+                        </ol>
+                        <ul>
+                            <li>List item</li>
+                            <li>List item</li>
+                        </ul>
+                    </div>
+                    <div class="content-image" data-width="wide">
+                        <img src="/assets/stlsw/stlsw-featured.png" alt="">
+                        <p class="fs-small italics text-primary-50">This is a caption</p>
+                    </div>
+                    <div class="content-image" data-width="full">
+                        <img src="/assets/mediaplayer-homepage.png" alt="">
+                        <p class="fs-small italics text-primary-50">This is a caption</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="conversion-panel">
+                <div class="heading-wrapper">
+                    <h2>Ready for more?</h2>
+                    <p>Check out additional case studies below!</p>
+                </div>
+                <button>
+                    <a href="/index.html">View More Case Studies</a>
+                </button>
+                </div>
+            </div>
+        </section> #}
+
+    </main>
+
+
+  

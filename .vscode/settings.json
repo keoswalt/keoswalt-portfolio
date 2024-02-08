@@ -1,0 +1,9 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[njk]": {
+        "editor.defaultFormatter": "eseom.nunjucks-template"
+    },
+    "emmet.includeLanguages": {
+        "njk": "html"
+    }
+}

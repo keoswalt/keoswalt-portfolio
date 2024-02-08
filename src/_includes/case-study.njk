@@ -1,0 +1,69 @@
+---
+layout: base.njk
+---
+
+    <main>
+        <section class="case-study-hero | padding-block-999" data-color="blue">
+            <div class="container">
+                <div class="even-columns">
+                    <div class="project-title">
+                        <h1 class="fs-page-title ff-accent">{{ title }}</h1>
+                        <p class="fs-primary-subhead">{{ summary }}</p>
+                    </div>
+                    <div class="details-wrapper">
+                        <div class="vertical-divider" data-color="light"></div>
+                        <div class="project-details">
+                            <div class="project-data">
+                                <p class="fw-bold">Timeline</p>
+                                <p>{{ timeline }}</p>
+                            </div>
+                            <div class="project-data">
+                                <p class="fw-bold">Deliverables</p>
+                                <p>{{ deliverables }}</p>
+                            </div>
+                            <div class="project-data">
+                                <p class="fw-bold">Impact</p>
+                                <p>{{ impact }}</p>
+                            </div>
+                            <div class="project-data">
+                                <p class="fw-bold">Categories</p>
+                                <div class="tag-stack">
+                                    <p class="tag" data-color="light">{{ category1 }}</p>
+                                    <p class="tag" data-color="light">{{ category2 }}</p>
+                                    <p class="tag" data-color="light">{{ category3 }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-image padding-top-100 padding-bottom-100">
+                    <img src="{{ featuredImage }}" alt="{{ featuredImageAlt }}">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="bg-dark-100 padding-block-500 text-secondary-100">
+            <div class="container">
+                <div class="banner flex-justify-end">
+                    <a href="{{ link }}" class="banner-contents">
+                        <p class="fs-body-h2 fw-bold">Visit the Site</p>
+                        <img class="icon-arrow" src="/assets/icons/arrow-up.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-block-900">
+            <div class="container">
+                <div class="content-wrapper">
+                    {{ content | safe }}    
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+  
