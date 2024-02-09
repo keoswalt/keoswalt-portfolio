@@ -28,7 +28,5 @@ collections:
     - {label: "Category 1", name: "category1", widget: "string"}
     - {label: "Category 2", name: "category2", widget: "string"}
     - {label: "Category 3", name: "category3", widget: "string"}
-    - {label: "Hide Page?", name: "hidden", widget: "select", options:
-    - {label: "No", value: ""},
-    - {label: "Yes", value: "display-none"},}
+    - {label: "Hide Page?", name: "hidden", widget: "select", options: [{label: "No", value: ""}, {label: "Yes", value: "display-none"}]}
     - {label: "Body", name: "body", widget: "markdown"}
