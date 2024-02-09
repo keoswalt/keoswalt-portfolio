@@ -236,6 +236,10 @@ svg {
   font-style: italic;
 }
 
+.text-decoration-none {
+  text-decoration: none;
+}
+
 .heading-wrapper {
   display: flex;
   flex-direction: column;
@@ -433,7 +437,7 @@ ol.list-spacing {
 
 .button[data-color="black"]:hover,
 .button[data-color="black"]:active {
-  background-color: var(--color-black-25);
+  background-color: var(--color-black-50);
 }
 
 .button[data-color="black"]:active {
@@ -984,6 +988,30 @@ ol.list-spacing {
   .content-wrapper ol {
   padding-inline: 1rem;
 }
+}
+
+/* Conversion Panel */
+
+.conversion-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;  
+}
+
+.conversion-panel .heading-wrapper {
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 50em) {
+  .conversion-panel {
+    gap: 1rem;
+  }
+
+  .conversion-panel .heading-wrapper {
+    gap: .5rem;
+  }
 }
 
 /* 
