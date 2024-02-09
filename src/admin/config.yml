@@ -7,7 +7,7 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: "case-studies"
-    label: "Case Studies"
+    label: "Case Study"
     folder: "src/case-studies"
     create: true
     slug: "{{title}}"
