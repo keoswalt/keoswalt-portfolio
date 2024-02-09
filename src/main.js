@@ -34,3 +34,15 @@ window.onload = function() {
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
+
+// Netlify CMS Configuration
+
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }

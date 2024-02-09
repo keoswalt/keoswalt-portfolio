@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "case-studies"
+    label: "Case Studies"
+    folder: "src/case-studies"
+    create: true
+    slug: "{{title}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Featured Image", name: "featuredImage", widget: "image"}
+    - {label: "Featured Image Alt", name: "featuredImageAlt", widget: "string"}
+    - {label: "Homepage Image", name: "smallImage", widget: "image"}
+    - {label: "Description (Homepage)", name: "description", widget: "string"}
+    - {label: "Completed Date", name: "projDate", widget: "string"}
+    - {label: "Tags", name: "tags", widget: "list", default: ["caseStudy"]}
+    - {label: "Link", name: "link", widget: "string"}
+    - {label: "Button Text", name: "buttonText", widget: "string"}
+    - {label: "Summary", name: "summary", widget: "string"}
+    - {label: "Timeline", name: "timeline", widget: "string"}
+    - {label: "Deliverables", name: "deliverables", widget: "string"}
+    - {label: "Impact", name: "impact", widget: "string"}
+    - {label: "Category 1", name: "category1", widget: "string"}
+    - {label: "Category 2", name: "category2", widget: "string"}
+    - {label: "Category 3", name: "category3", widget: "string"}
+    - {label: "Hide Page?", name: "hidden", widget: "list"}
+    - {label: "Body", name: "body", widget: "markdown"}
