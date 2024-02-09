@@ -23,17 +23,17 @@ navLink.forEach(link => {
     });
 });
 
-// Reset scroll position
+// Reset scroll position (this was added to solve a problem in development but was messing with anchor links in the nav. Disabled for now as the original scroll issue appears to have resolved itself)
 
-window.onload = function() {
-    setTimeout(function() {
-        window.scrollTo(0, 0);
-    }, 0);
-};
+// window.onload = function() {
+//     setTimeout(function() {
+//         window.scrollTo(0, 0);
+//     }, 0);
+// };
 
-if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-}
+// if ('scrollRestoration' in history) {
+//     history.scrollRestoration = 'manual';
+// }
 
 // Netlify CMS Configuration
 
