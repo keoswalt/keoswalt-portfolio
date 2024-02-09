@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/admin');
   eleventyConfig.addPassthroughCopy('./src/favicon.svg');
 
+  // Get the current year for site copyright
+
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   // Return your Object options:
   return {
     dir: {
