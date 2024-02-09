@@ -10,7 +10,7 @@ tags:
   - featured
 link: >-
   https://www.figma.com/proto/GfDQ10d8p9pAlcgaaS3EaT/Timestamp-Case-Study?page-id=0%3A1&type=design&node-id=1-1888&viewport=786%2C-660%2C0.12&t=90e7OLJlwhtPizB4-1&scaling=contain
-buttonText: View Project
+buttonText: View Presentation
 summary: >-
   The goal of this project was to create a new multimedia player experience for
   Berklee students and instructors.
@@ -21,6 +21,5 @@ category1: Product Design
 category2: User Flows
 category3: Visual Design
 hidden: display-none
-date: 2024-01-01
 ---
 N/A
