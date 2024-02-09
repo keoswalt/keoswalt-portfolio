@@ -18,6 +18,7 @@ category1: Web Development
 category2: UX Design
 category3: Content Design
 hidden: 'No'
+date: 2023-09-01
 ---
 ## Background
 
