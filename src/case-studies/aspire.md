@@ -19,8 +19,7 @@ impact: >-
 category1: Design Systems
 category2: Information Architecture
 category3: Web Design
-hidden:
-  - display-none
+hidden: 'No'
 ---
 ## Background
 
