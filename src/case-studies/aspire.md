@@ -1,8 +1,8 @@
 ---
 title: Aspire Software
-featuredImage: /assets/aspire/aspire-featured.png
+featuredImage: /assets/uploads/aspire-featured.png
 featuredImageAlt: Aspire Landscape Business Management Software
-smallImage: /assets/aspire/aspire-homepage.png
+smallImage: /assets/uploads/aspire-homepage.png
 description: Design system for SaaS company
 projDate: March 2023
 tags: ["caseStudy", "featured"]

@@ -1,8 +1,8 @@
 ---
 title: St. Louis Startup Week
-featuredImage: /assets/stlsw/stlsw-featured.png
+featuredImage: /assets/uploads/stlsw-featured.png
 featuredImageAlt: St. Louis Startup Week
-smallImage: /assets/stlsw/stlsw-homepage.png
+smallImage: /assets/uploads/stlsw-homepage.png
 description: Website redesign for annual entrepreneurship conference
 projDate: September 2023
 tags: ["caseStudy", "featured"]

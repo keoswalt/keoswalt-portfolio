@@ -2,7 +2,7 @@
 title: Media Player Feature Redesign
 featuredImage: 
 featuredImageAlt:
-smallImage: /assets/mediaplayer-homepage.png
+smallImage: /assets/uploads/mediaplayer-homepage.png
 description: Creating a new a media player experience for students
 projDate: January 2024
 tags: ["caseStudy", "featured"]
