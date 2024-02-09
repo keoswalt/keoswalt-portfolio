@@ -5,117 +5,84 @@ featuredImageAlt: Aspire Landscape Business Management Software
 smallImage: /assets/uploads/aspire-homepage.png
 description: Design system for SaaS company
 projDate: March 2023
-tags: ["caseStudy", "featured"]
-link: https://www.youraspire.com
+tags:
+  - caseStudy
+  - featured
+link: 'https://www.youraspire.com'
 buttonText: View Project
-
-summary:
-timeline:
-deliverables:
-impact:
-category1:
-category2:
-category3:
+summary: New information architecture and design system for expanding SaaS company
+timeline: March 2022 - March 2023
+deliverables: 'Information architecture, design system, and website overhaul'
+impact: >-
+  Restructured website to align with new markets, implemented organization's
+  first design system, and introduced a new lead routing solution
+category1: Design Systems
+category2: Information Architecture
+category3: Web Design
+hidden:
+  - display-none
 ---
+## Background
 
-# SaaS website redesign
+I led website experience for Aspire Software from March 2022-March 2023. During my time in the role, I worked with agency partners to overhaul the marketing website. By implementing a new information architecture and design system, we were able to reconfigure the site to meet changing business needs and build a solid foundation for the future.
 
-Client: Aspire Software
-Project: Rebuilding a website to allow for multiple products and verticals
-Date: March 2023
-
-Timeline: March 2022-March 2023
-Deliverables: New design system in Figma, updated component library in HubSpot
-Objective:
-Impact:
-
-
-## Goals
-
-Redesign a website initially created to market one product in one vertical to market multiple products in multiple verticals
-
-## Project background
+## About Aspire
 
 Aspire Software was founded in 2013 with a single product: a cloud-based business management platform for landscape companies. Over the years, it grew by expanding into new verticals and acquiring additional products.
 
-By the time I transitioned to managing website experience, Aspire had four discrete products targeting multiple industries within the broad “field service management” category.
+By the time I transitioned to managing website experience in 2022, Aspire had four discrete products targeting multiple industries within the broad “field service management” category.
 
-![Logos for each of Aspire’s four products in 2022](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/aspire_product_logos.png)
+![Logos for each of Aspire’s four products in 2022](/assets/uploads/aspire-logos.jpeg)
 
-Logos for each of Aspire’s four products in 2022
+My task was finding a way to incorporate all products and industries on a single Aspire website in a way that met the needs of users, internal stakeholders, and search engines—and looked great doing it.
 
-My task was finding a way to incorporate all products and industries on a single Aspire website in a way that met the needs of users, internal stakeholders, and search engines.
+## Information Architecture
+
+Addressing the site's information architecture was the first step in the process. With an approach informed by OOUX, I identified the types of content needed on the site then explored strategies for organizing that content.
+
+By the time I transitioned to managing website experience in 2022, Aspire had four discrete products targeting multiple industries within the broad “field service management” category.
+
+![Brainstorming Aspire product connections](/assets/uploads/aspire-brainstorm2.jpeg)
 
 Through a series of conversations with marketing leadership and other key players, I was able to create and iterate on a sitemap that addressed these needs.
 
-![Finalized sitemap for youraspire.com](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/Screenshot_2023-01-18_at_12.50.10_PM.png)
+![Aspire sitemap](/assets/uploads/aspire-sitemap.jpeg)
 
-Finalized sitemap for youraspire.com
+One of the results of this process was separating industry and product (which were previously intertwined) into separate sections of the site. This marked a significant departure from how content was presented in the past, so our priorities in handling the shift were to:
 
-## Solution
+* Ensure a seamless, clear browsing experience for all users
+  Prevent any confusion or frustration from users and stakeholders already familiar with the site
 
-The first step was brainstorming the types of content we needed to have on the website, then exploring strategies to organize that content.
+We accomplished this by:
 
-![Early brainstorm notes](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/IMG_363446E6187F-1.jpeg)
+1. Creating industry-agnostic product pages
+2. Setting up product-specific pages for things like features, pricing, and integrations (nested under their appropriate product pages)
+3. Making design choices to prioritize clarity in the content and UI
 
-Early brainstorm notes
+![Aspire solutions](/assets/uploads/aspire-solutions.jpeg)
 
-![Planning sitemap](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/IMG_5CDD3A86F932-1.jpeg)
+We collaborated closely with SEO partners throughout the IA process. One of the key strategies we found to solve for their needs included creating high SEO value, industry-specific feature pages. These could incorporate one or more relevant products, using a product badge design to show the functionality available for each.
 
-Planning sitemap
+With this new information architecture in place, we prepared Aspire for whatever the future holds, whether that means entering new verticals with existing software or acquiring new solutions.
 
-We solved the multi-solution, multi vertical challenge by:
+## New Lead Routing Experience
 
-- **Separating “industry” and “product”** into their own sections of the site, allowing us to create connections between the two through internal linking
-- Creating a **solutions card deck module** and **product comparison module** that can be used to highlight relevant products
-- **Nesting product-specific pages** (features, pricing, integrations, etc.) under their relevant product for better user experience
-    - e.g., /products/aspire/pricing
-- Creating high SEO value, **industry-specific feature pages** that can include one or more relevant products, using a product badge design to show the functionality available for each
-- Building a new “**product match form**” experience that allows users to answer three basic questions and be directed to the product that’s right for them
+Another problem with the original site was the primary call to action, "Request Demo." This CTA worked perfectly when Aspire was a single-product company, but it no longer addressed our needs as a multi-product company.
 
-### Industry pages
+Each product had its own CTA—either request a demo or start a free trial. Those CTAs could be found on their relevant product pages, of course, but what if a user wasn't sure which product was right for them? Or a page included multiple products and one primary CTA? And what were we supposed to do with the button in the global nav?
 
-![Landscape industry page with all four relevant product logos under headline](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/landscape.png)
+My solution was to create what I called a "product match form" experience. This form allowed users to identify the solution that worked for them and take the appropriate next step, all by answering just a few basic questions. Logic on the backend matched answers about revenue, industry, and software needs to the right product and directed submitters to take immediate action: scheduling a meeting or signing up for a free trial.
 
-Landscape industry page with all four relevant product logos under headline
+![Lead generation form asking for user's industry and business size](/assets/uploads/aspire-pmf-v2.jpeg)
 
-![Janitorial industry page with one relevant product logo under headline](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/janitorial.png)
+## Design System
 
-Janitorial industry page with one relevant product logo under headline
+There wasn't a design system in place when we started, so building one from scratch was the longest phase of the process.
 
-### New product modules
+We enlisted the support of an external agency, where our primary team included a designer, two developers, and a SCRUM master. Working in two-week sprints, over the course of a year we created a fully-fledged design system with the pattern library in Figma and the components built in HubSpot.
 
-![solutions deck.png](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/solutions_deck.png)
+![New Aspire modules](/assets/uploads/aspire-modules.jpeg)
 
-### Product match form experience
+## Key Learnings
 
-![product match form.png](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/product_match_form.png)
-
-![By answering just a few basic questions, users can be directed to the product that’s the best fit for their size, industry, and needs.](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/pmf_2.png)
-
-By answering just a few basic questions, users can be directed to the product that’s the best fit for their size, industry, and needs.
-
-### High SEO value feature pages
-
-![Solved challenge of high SEO value terms being feature specific by separating product feature pages (product specific, industry agnostic) from industry feature pages (industry specific, product agnostic).](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/landscape_estimating.png)
-
-Solved challenge of high SEO value terms being feature specific by separating product feature pages (product specific, industry agnostic) from industry feature pages (industry specific, product agnostic).
-
-![In writing about the benefits on industry feature pages, we can use product badges to show which product lines offer which specific functionality.](SaaS%20website%20redesign%2052fd766c756e48ee97853f69d17051fa/product_badge.png)
-
-In writing about the benefits on industry feature pages, we can use product badges to show which product lines offer which specific functionality.
-
-## Sustainable structure
-
-With this new information architecture in place, Aspire is equipped for whatever the future holds—whether that means entering new verticals with existing software (just add a new industry page and link the product there!) or acquiring new solutions (just add a new product page and link to the appropriate industry/ies!).
-
-## Key learnings
-
-Every major website project involves lots of moving pieces and stakeholder requirements. This restructure process was no different and gave me an opportunity to practice leading an initiative with multiple (often seemingly conflicting) goals. The solution I found most helpful was staying in **regular communication** with all stakeholders, investing in **brainstorming** alternative ideas when goals did conflict, using lots of **visual aids** (wireframes, mind maps, etc.), and **clarifying roles** and opportunities for feedback throughout the process.
-
-**Roles:**
-
-- Project lead: Kim
-- Approver: Demand Generation Director
-- Contributors: Webstacks (agency), SEO Specialist
-- Stakeholders: Product Marketing Director, Marketing Director, Brand Manager
+Every major website project involves lots of moving pieces and stakeholder requirements. This process was no different and gave me an opportunity to practice leading an initiative with multiple (often seemingly conflicting) goals. The solution I found most helpful was staying in regular communication with all stakeholders, investing in brainstorming alternative ideas when goals did conflict, using lots of visual aids (wireframes, mind maps, etc.), and clarifying roles and opportunities for feedback throughout the process.
