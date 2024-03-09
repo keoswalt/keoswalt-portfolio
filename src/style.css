@@ -766,11 +766,6 @@ ol.list-spacing {
   gap: 2rem;
 }
 
-.footer-text-wrapper {
-  display: flex;
-  justify-content: flex-start;
-}
-
 @media (max-width: 50em) {
   .footer-details {
     gap: 0;
