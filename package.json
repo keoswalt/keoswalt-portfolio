@@ -1,0 +1,16 @@
+{
+  "name": "koswalt-portfolio",
+  "version": "1.0.0",
+  "description": "This portfolio was designed and developed by Kim Oswalt (keoswalt@gmail.com) in January 2024.",
+  "main": "main.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
