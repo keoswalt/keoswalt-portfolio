@@ -711,13 +711,17 @@ ol.list-spacing {
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 @media (max-width: 50em) {
   .contact-bar {
     justify-content: flex-start;
   }
+}
+
+.contact-bar-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .email-wrapper {
