@@ -944,7 +944,7 @@ ol.list-spacing {
 }
 
 .fun-project-title {
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-weight: var(--fw-bold);
   line-height: 1.1;
 }
