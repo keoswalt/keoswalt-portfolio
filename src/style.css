@@ -21,11 +21,12 @@
 
   --fs-200: 0.875rem;
   --fs-300: 1rem;
-  --fs-400: 1.125rem;
+  --fs-400: 1.25rem;
   --fs-500: 1.5rem;
   --fs-550: 2rem;
   --fs-600: 2.25rem;
   --fs-700: 3rem;
+  --fs-750: 4rem;
   --fs-800: 5rem;
   --fs-900: 7.5rem;
 
@@ -36,7 +37,7 @@
   --fs-secondary-heading: var(--fs-700);
   --fs-primary-subheading: var(--fs-500);
   --fs-secondary-subheading: var(--fs-200);
-  --fs-button: var(--fs-300);
+  --fs-button: var(--fs-400);
   --fs-date: var(--fs-300);
   --fs-nav: var(--fs-400);
   --fs-site-title: var(--fs-900);
@@ -211,6 +212,11 @@ svg {
   line-height: 1.2;
 }
 
+.fs-secondary-heading-large {
+  font-size: var(--fs-750);
+  line-height: 1;
+}
+
 .fs-secondary-subhead {
   font-size: var(--fs-secondary-subheading);
   line-height: 1.2;
@@ -286,6 +292,10 @@ svg {
 
 .padding-bottom-200 {
   padding-bottom: 2rem;
+}
+
+.padding-bottom-500 {
+  padding-bottom: 5rem;
 }
 
 .flex-justify-end {
@@ -902,6 +912,48 @@ ol.list-spacing {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+/* Just for Fun Projects */
+
+#fun-projects .heading-wrapper {
+  gap: 1rem;
+}
+
+.fun-project-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 50em) {
+  .fun-project-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fun-project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.25rem;
+  border: 1px solid var(--color-black-100);
+  min-width: 0;
+}
+
+.fun-project-title {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+}
+
+.fun-project-card .button-wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+  justify-self: flex-end;
 }
 
 /* Banner */

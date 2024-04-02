@@ -21,5 +21,6 @@ category1: Product Design
 category2: User Flows
 category3: Visual Design
 hidden: display-none
+date: 2024-01-01
 ---
 N/A
