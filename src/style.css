@@ -249,7 +249,7 @@ svg {
 .heading-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .padding-block-999 {
@@ -924,7 +924,6 @@ ol.list-spacing {
 /* Just for Fun Projects */
 
 #fun-projects .heading-wrapper {
-  gap: 1rem;
   margin-bottom: .5rem;
 }
 
@@ -1085,7 +1084,6 @@ ol.list-spacing {
 
 .conversion-panel .heading-wrapper {
   align-items: center;
-  gap: 1rem;
 }
 
 @media (max-width: 50em) {
