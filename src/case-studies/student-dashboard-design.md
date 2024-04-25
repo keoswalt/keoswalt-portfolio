@@ -25,16 +25,8 @@ category2: Visual Design
 category3: User Research
 hidden: 'No'
 projectLink: display-none
+date: 2024-03-01
 ---
-## Design Preview
-
-Here's a preview of the desktop and mobile dashboard screens designed during this project. Continue reading for the background and details on development.
-
-![Six examples of mobile screen designs for the dashboard](/assets/uploads/mobile-screens.png)
-
-![Example of desktop design for dashboard with widgets collapsed](/assets/uploads/desktop-courses.png)
-
-![Example of desktop design for dashboard with widgets expanded](/assets/uploads/streak.png)
 
 ## Background
 
@@ -63,7 +55,7 @@ I roughly sketched a few quick ideas to have as a visual reference when I went t
 
 ![Series of sketches experimenting with new layouts for the dashboard](/assets/uploads/explorations.png)
 
-Key changes included:
+## Key changes included:
 
 ### New layout that matches the LMS platform
 
@@ -89,6 +81,14 @@ The solution: a widget sidebar. Any future requests could be handled with widget
 
 ![Widget style guide includes instructions for implementing future widgets including character limits, sizing restrictions, border radius, and more.](/assets/uploads/widget-style-guide.png)
 
+## Mobile
+
+By creating a stronger organizational structure, we were also able to drastically improve the experience on mobile devices. Now, students can select the hamburger menu to navigate between the dashboard's primary content areas: courses, inbox, and Discourse. Widgets are collapsed by default on mobile to maximize ease of access for students' most critical tasks, but they can be expanded from the bottom of any screen.
+
+
+![Six examples of mobile screen designs for the dashboard](/assets/uploads/mobile-screens.png)
+
+
 ## Surveys
 
-As the final step in this process, I created a series of surveys to launch alongside the Dashboard 2.0 implementation. The surveys collect quantitative and qualitative feedback about student experience and will be analyzed in tandem with usage data from Gainsight to track adoption and discover new insights that will be used to iterate on future versions of the dashboard. At the time of writing, the dashboard was currently in development and is planned to launch in late spring 2024.
+As the final step in this process, I created a series of surveys to go live alongside the Dashboard 2.0 implementation. The surveys collect quantitative and qualitative feedback about student experience and will be analyzed in tandem with usage data from Gainsight to track adoption and discover new insights that will be used to iterate on future versions of the dashboard. At the time of writing, the dashboard was currently in development and is planned to launch in late spring 2024.
