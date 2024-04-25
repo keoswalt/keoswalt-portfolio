@@ -65,13 +65,13 @@ I roughly sketched a few quick ideas to have as a visual reference when I went t
 
 Key changes included:
 
-**New layout that matches the LMS platform**
+### New layout that matches the LMS platform
 
 The previous layout wasn’t intuitive and looked a bit dated. The new format better aligns with student expectations (e.g., where the user menu lives and its contents) and makes good use of screen real estate. The sidebar, header, and content window layout also matches what students are used to inside their courses, making it easier to move back-and-forth between the two. 
 
 ![New design of dashboard has a sidebar of menu options in a vertical line, followed by a primary content window that takes up 75% of the screen's width. The remaining 25% is filled with a strip of vertically-oriented "widgets" that hold info like current streak, links to forms, and notifications of past-due assignments](/assets/uploads/desktop-discourse.png)
 
-**Separating primary and secondary content**
+### Separating primary and secondary content
 
 By dividing the primary (everything in the left pane) and secondary (everything in the right pane) content, we established a natural hierarchy that lets content-rich elements like course cards and messages take up as much space as possible while preventing secondary elements (streak meter, grade average, etc.) from causing a distraction.
 
@@ -79,7 +79,7 @@ By dividing the primary (everything in the left pane) and secondary (everything 
 
 ![The redesigned inbox better matches student expectations with a list of conversation threads down the side. When you click one, it expands a window with the conversation thread on the right.](/assets/uploads/inbox-marci.png)
 
-**Adding customizable widget sidebar**
+### Adding customizable widget sidebar
 
 We knew that the dashboard would be receiving lot of requests for niche features from leaders across the organization in the future, but we couldn’t predict exactly what they would be. I wanted to come up with a structure that allowed us to fulfill these requests without compromising on student experience.
 
