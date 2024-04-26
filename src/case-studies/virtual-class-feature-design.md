@@ -1,9 +1,9 @@
 ---
-title: Virtual Class Feature Design
+title: Virtual Events Redesign
 featuredImage: /assets/uploads/live-class-featured.png
 featuredImageAlt: 'Desktop, mobile, and tablet designs for live class feature'
 smallImage: /assets/uploads/live-class-homepage.png
-description: Redesign of virtual live class feature for students and instructors
+description: Redesign of live class management for students and instructors
 projDate: April 2024
 date: '2024-04-01'
 tags:
