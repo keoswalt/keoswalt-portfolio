@@ -9,7 +9,7 @@ tags:
   - caseStudy
   - featured
 link: >-
-  https://docs.google.com/presentation/d/1fFMLXMmzZb37Dqwwpw4PYdIjd_OGx5FmowyMqflZGQI/edit?usp=sharing
+  https://docs.google.com/presentation/d/e/2PACX-1vQw150ICPBpLUssowtmS5IccYAbQsrjLDM73EXFy0Y3FGwY-Z1UmXkq_JyvFKR36huiPcbcbt-0bIFh/pub?start=false&loop=true&delayms=60000
 buttonText: View Presentation
 summary: >-
   The goal of this project was to create a new multimedia player experience for
