@@ -1,0 +1,108 @@
+<section class="padding-block-900" id="projects">
+    <div class="container">
+      <div class="heading-wrapper">
+        <h2 class="fs-primary-heading ff-accent text-primary-100">
+          Projects (OLD)
+        </h2>
+        <div class="divider"></div>
+      </div>
+      <ul role="list" aria-label="Projects">
+        {%- for caseStudy in collections.featured | reverse -%}
+          <li>
+            <article class="project-card even-columns">
+              <div class="project-card-text">
+                <p class="date">{{ caseStudy.data.projDate }}</p>
+                <div class="project-details">
+                  <h3 class="text-primary-100 fs-secondary-heading ff-accent">{{ caseStudy.data.title }}</h3>
+                  <p class="text-primary-50 fs-body">{{ caseStudy.data.description }}</p>
+                </div>
+                <div class="button-wrapper">
+                  <button class="button {{ caseStudy.data.projectLink }}" data-type="text-only" data-align="left">
+                    <a href="{{ caseStudy.data.link }}" target="_blank">
+                      <p>{{ caseStudy.data.buttonText }}</p>
+                      <img src="assets/icons/arrow-up-dark.svg" alt=""/>
+                    </a>
+                  </button>
+                  <button class="button {{ caseStudy.data.hidden }}" data-align="left">
+                    <a href="{{ caseStudy.url }}">Read Case Study</a>
+                  </button>
+                </div>
+              </div>
+              <div class="project-card-img-wrapper">
+                <img src="{{ caseStudy.data.smallImage }}"/>
+              </div>
+            </article>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="padding-bottom-500" id="fun-projects">
+    <div class="container">
+      <div class="heading-wrapper">
+        <p class="text-primary-100 fs-primary-heading ff-accent">Just for Fun</p>
+        <p class="fs-primary-subhead text-primary-50">A few projects I've built for fun or to learn new skills.</p>
+        <div class="divider desktop-only"></div>
+      </div>
+      <div class="fun-project-cards-wrapper padding-block-500">
+        <div class="fun-project-card">
+          <p class="fun-project-title">Artist Quiz</p>
+          <div>
+            <ul role="list" aria-label="Tech Stack" class="tech-stack">
+              <li class="tag">JavaScript</li>
+              <li class="tag">HTML/CSS</li>
+            </ul>
+          </div>
+          <p>Quiz to match art with its creators. Designed to let admins easily add more art and artists over time with JS classes.</p>
+          <div class="button-wrapper">
+            <button class="button" data-color="black">
+              <a href="https://github.com/keoswalt/artist-quiz" target="_blank">View GitHub repo</a>
+            </button>
+            <button class="button">
+              <a href="https://keoswalt.github.io/artist-quiz/" target="_blank">View live site</a>
+            </button>
+          </div>
+        </div>
+        <div class="fun-project-card">
+          <p class="fun-project-title">Node Names Game</p>
+          <div>
+            <ul role="list" aria-label="Tech Stack" class="tech-stack">
+              <li class="tag">JavaScript</li>
+              <li class="tag">HTML/CSS</li>
+            </ul>
+          </div>
+          <p>A 2-person game based on Code Names Duet, built to be used with a tablet and two mobile phones.</p>
+          <div class="button-wrapper">
+            <button class="button" data-color="black">
+              <a href="https://github.com/keoswalt/node-names-game" target="_blank">View GitHub repo</a>
+            </button>
+            <button class="button">
+              <a href="https://keoswalt.github.io/node-names-game/" target="_blank">View live site*</a>
+            </button>
+          </div>
+          <p class="italics">*Meant to be used on a tablet.</p>
+        </div>
+        <div class="fun-project-card">
+          <p class="fun-project-title">Fira Coder Clock</p>
+          <div>
+            <ul role="list" aria-label="Tech Stack" class="tech-stack">
+              <li class="tag">HTML/CSS</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+          </div>
+          <p>A minimal clock web app designed to use the Fira font and a color scheme originally created by Coder Coder for VS Code.</p>
+          <div class="button-wrapper">
+            <button class="button" data-color="black">
+              <a href="https://github.com/keoswalt/fira-coder-clock" target="_blank">View GitHub repo</a>
+            </button>
+            <button class="button">
+              <a href="https://keoswalt.github.io/fira-coder-clock/" target="_blank">View live site</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>

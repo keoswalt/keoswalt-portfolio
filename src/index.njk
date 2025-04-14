@@ -2,210 +2,195 @@
 title: Kim Oswalt | Product Designer
 layout: base.njk
 ---
-    <main>
-      <section class="padding-block-900">
-        <div class="homepage-hero | container">
-          <div class="hero-image-wrapper">
-            <img
-              src="assets/hero-image.webp"
-              alt="Five characters with a laptop, iPad, books, video camera, and sticky notes"
-            />
-          </div>
-          <div class="hero-text">
-            <h1 class="text-primary-100 site-title">Kim Oswalt</h1>
-            <p class="site-subhead desktop-only">
-              Creating Impactful Digital Products
-            </p>
-            <p class="site-subhead mobile-only" aria-hidden="true">
-              Product Designer
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section class="padding-block-900" id="background">
-        <div class="container">
-          <div class="even-columns">
-            <div class="background-details">
-              <div class="heading-wrapper">
-                <h2 class="fs-primary-heading ff-accent text-primary-100">
-                  Background
-                </h2>
-                <p class="fs-primary-subhead text-primary-50 desktop-only">
-                  Product Designer
-                </p>
-              </div>
-              <div class="divider mobile-only"></div>
-              <div class="bio-text">
-                <div class="vertical-divider"></div>
-                <div class="bio-content">
-                  <p>
-                    Hey 👋 I’m Kim, a multidisciplinary designer focused on creating seamless, scalable, and impactful digital experiences. Currently at <a href="https://www.skillable.com">Skillable</a> working on hands-on learning and skill validation.
-                  </p>
-                  <p>
-                    In my spare time, I read as much as possible, bike around St. Louis, embroider things, volunteer with <a href="https://rungforwomen.org" target="_blank">Rung for Women</a>, and eat way too many tacos.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <ul role="list" aria-label="Tech Stack" class="tech-stack">
-                  <li class="tag">Figma</li>
-                  <li class="tag">HTML/CSS</li>
-                  <li class="tag">Javascript</li>
-                  <li class="tag">Webflow</li>
-                  <li class="tag">Adobe Creative Suite</li>
-                </ul>
-              </div>
-            </div>
-            <div class="background-image-social">
-              <div class="contact-bar-wrapper">
-                <div class="contact-bar padding-top-200">
-                  <ul role="list" aria-label="Social Links" class="socials">
-                    <li>
-                      <a
-                        aria-label="LinkedIn"
-                        href="https://www.linkedin.com/in/kim-oswalt/"
-                        ><img src="assets/icons/linkedin-dark.svg" alt="LinkedIn"
-                      /></a>
-                    </li>
-                    <li>
-                      <a aria-label="GitHub" href="https://github.com/keoswalt"
-                        ><img src="assets/icons/github-dark.svg" alt="GitHub"
-                      /></a>
-                    </li>
-                    <li>
-                      <a aria-label="Medium" href="https://medium.com/@keoswalt"
-                        ><img src="assets/icons/medium-dark.svg" alt="Medium"
-                      /></a>
-                    </li>
-                  </ul>
-                  <div class="email-wrapper">
-                    <img src="assets/icons/envelope-dark.svg" alt="" />
-                    <a href="mailto:keoswalt@gmail.com" class="text-primary-100"
-                      >keoswalt@gmail.com</a
-                    >
-                  </div>
-              </div>
-              </div>
-              <div class="bio-image-wrapper">
-                <img src="assets/bio-photo.webp" alt="Kim holding an ipad" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="padding-block-900" id="projects">
-        <div class="container">
+<main>
+  <section class="padding-block-900">
+    <div class="homepage-hero | container">
+      <div class="hero-image-wrapper">
+        <img src="assets/hero-image.webp" alt="Five characters with a laptop, iPad, books, video camera, and sticky notes"/>
+      </div>
+      <div class="hero-text">
+        <h1 class="text-primary-100 site-title">Kim Oswalt</h1>
+        <p class="site-subhead desktop-only">
+          Creating Impactful Digital Products
+        </p>
+        <p class="site-subhead mobile-only" aria-hidden="true">
+          Creating Impactful Digital Products
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="padding-block-900" id="background">
+    <div class="container">
+      <div class="even-columns">
+        <div class="background-details">
           <div class="heading-wrapper">
             <h2 class="fs-primary-heading ff-accent text-primary-100">
-              Projects
+              Background
             </h2>
-            <div class="divider"></div>
+            <p class="fs-primary-subhead text-primary-50 desktop-only">
+              Senior Product Designer
+            </p>
           </div>
-          <ul role="list" aria-label="Projects">
-
-            {%- for caseStudy in collections.featured | reverse -%}
-
-            <li>
-              <article class="project-card even-columns">
-                <div class="project-card-text">
-                  <p class="date">{{ caseStudy.data.projDate }}</p>
-                  <div class="project-details">
-                    <h3 class="text-primary-100 fs-secondary-heading ff-accent">{{ caseStudy.data.title }}</h3>
-                    <p class="text-primary-50 fs-body">{{ caseStudy.data.description }}</p>
-                  </div>
-                  <div class="button-wrapper">
-                    <button
-                      class="button {{ caseStudy.data.projectLink }}"
-                      data-type="text-only"
-                      data-align="left"
-                    >
-                      <a
-                        href="{{ caseStudy.data.link }}"
-                        target="_blank"
-                      >
-                        <p>{{ caseStudy.data.buttonText }}</p>
-                        <img src="assets/icons/arrow-up-dark.svg" alt="" />
-                      </a>
-                    </button>
-                    <button class="button {{ caseStudy.data.hidden }}" data-align="left">
-                      <a href="{{ caseStudy.url }}">Read Case Study</a>
-                    </button>
-                  </div>
-                </div>
-                <div class="project-card-img-wrapper">
-                  <img
-                    src="{{ caseStudy.data.smallImage }}"
-                  />
-                </div>
-              </article>
-            </li>
-
-            {%- endfor -%}
-            
-          </ul>
+          <div class="divider mobile-only"></div>
+          <div class="bio-text">
+            <div class="vertical-divider"></div>
+            <div class="bio-content">
+              <p>
+                Hey 👋 I’m Kim, a multidisciplinary designer focused on creating intuitive, scalable, and impactful digital experiences.
+                Currently at
+                <a href="https://www.skillable.com">Skillable</a>
+                working on hands-on learning and skill validation.
+              </p>
+              <p>
+                In my spare time, I read as much as possible, bike around St. Louis, crochet lots of sweaters, volunteer with
+                <a href="https://rungforwomen.org" target="_blank">Rung for Women</a>, and eat way too many tacos.
+              </p>
+            </div>
+          </div>
+          <div>
+            <ul role="list" aria-label="Tech Stack" class="tech-stack">
+              <li class="tag">Figma</li>
+              <li class="tag">HTML/CSS</li>
+              <li class="tag">Javascript</li>
+              <li class="tag">Pendo</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">Adobe Creative Suite</li>
+            </ul>
+          </div>
         </div>
-      </section>
-
-      <section class="padding-bottom-500" id="fun-projects">
-        <div class="container">
-          <div class="heading-wrapper">
-            <p class="text-primary-100 fs-primary-heading ff-accent">Just for Fun</p>
-            <p class="fs-primary-subhead text-primary-50">A few projects I've built for fun or to learn new skills.</p>
-            <div class="divider desktop-only"></div>
-          </div>
-          <div class="fun-project-cards-wrapper padding-block-500">
-            <div class="fun-project-card">
-              <p class="fun-project-title">Artist Quiz</p>
-              <div>
-                <ul role="list" aria-label="Tech Stack" class="tech-stack">
-                  <li class="tag">JavaScript</li>
-                  <li class="tag">HTML/CSS</li>
-                </ul>
-              </div>
-              <p>Quiz to match art with its creators. Designed to let admins easily add more art and artists over time with JS classes.</p>
-              <div class="button-wrapper">
-                <button class="button" data-color="black"><a href="https://github.com/keoswalt/artist-quiz" target="_blank">View GitHub repo</a></button>
-                <button class="button"><a href="https://keoswalt.github.io/artist-quiz/" target="_blank">View live site</a></button>
-              </div>
-            </div>
-            
-            <div class="fun-project-card">
-              <p class="fun-project-title">Node Names Game</p>
-              <div>
-                <ul role="list" aria-label="Tech Stack" class="tech-stack">
-                  <li class="tag">JavaScript</li>
-                  <li class="tag">HTML/CSS</li>
-                </ul>
-              </div>
-              <p>A 2-person game based on Code Names Duet, built to be used with a tablet and two mobile phones.</p>
-              <div class="button-wrapper">
-                <button class="button" data-color="black"><a href="https://github.com/keoswalt/node-names-game" target="_blank">View GitHub repo</a></button>
-                <button class="button"><a href="https://keoswalt.github.io/node-names-game/" target="_blank">View live site*</a></button>
-              </div>
-              <p class="italics">*Meant to be used on a tablet.</p>
-            </div>
-            
-            <div class="fun-project-card">
-              <p class="fun-project-title">Fira Coder Clock</p>
-              <div>
-                <ul role="list" aria-label="Tech Stack" class="tech-stack">
-                  <li class="tag">HTML/CSS</li>
-                  <li class="tag">JavaScript</li>
-                </ul>
-              </div>
-              <p>A minimal clock web app designed to use the Fira font and a color scheme originally created by Coder Coder for VS Code.</p>
-              <div class="button-wrapper">
-                <button class="button" data-color="black"><a href="https://github.com/keoswalt/fira-coder-clock" target="_blank">View GitHub repo</a></button>
-                <button class="button"><a href="https://keoswalt.github.io/fira-coder-clock/" target="_blank">View live site</a></button>
+        <div class="background-image-social">
+          <div class="contact-bar-wrapper">
+            <div class="contact-bar padding-top-200">
+              <ul role="list" aria-label="Social Links" class="socials">
+                <li>
+                  <a aria-label="LinkedIn" href="https://www.linkedin.com/in/kim-oswalt/"><img src="assets/icons/linkedin-dark.svg" alt="LinkedIn"/> </a>
+                </li>
+                <li>
+                  <a aria-label="GitHub" href="https://github.com/keoswalt"><img src="assets/icons/github-dark.svg" alt="GitHub"/> </a>
+                </li>
+                <li>
+                  <a aria-label="Medium" href="https://medium.com/@keoswalt"><img src="assets/icons/medium-dark.svg" alt="Medium"/> </a>
+                </li>
+              </ul>
+              <div class="email-wrapper">
+                <img src="assets/icons/envelope-dark.svg" alt=""/>
+                <a href="mailto:keoswalt@gmail.com" class="text-primary-100">keoswalt@gmail.com</a>
               </div>
             </div>
           </div>
-          <aside class="section-note-wrapper">
-            <p class="italics"><span class="fw-bold">Note:</span> Everything on this site was illustrated, designed, and coded by me (without the use of AI generated content). You can view the <a href="https://github.com/keoswalt/keoswalt-portfolio" target="_blank">GitHub repo here</a> if you'd like a peek behind the curtain.</p>
-          </aside>
+          <div class="bio-image-wrapper">
+            <img src="assets/bio-photo.webp" alt="Kim holding an ipad"/>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <section class="padding-block-900">
+    <div class="container">
+      <div class="heading-wrapper">
+        <h2 class="fs-primary-heading ff-accent text-primary-100">Showcase</h2>
+        {# <div class="divider"></div> #}
+      </div>
+
+      <div class="showcase-card-container">
+        <div class="showcase-cards">
+
+          <div class="showcase-card">
+            <div class="showcase-card-content">
+              <p class="date">April 2025</p>
+              <h3 class="fs-secondary-heading ff-accent">Building a Skill Validation Product</h3>
+                <div class="tags">
+                  <div class="tag" data-color="light">Software Design</div>
+                  <div class="tag" data-color="light">AI</div>
+                </div>
+              
+              <img class="showcase-img" src="assets/uploads/activities.png" alt="">
+            </div>
+            <div class="button-wrapper">
+              <button class="button videoBtn" data-video-id="VNJU6UWay1A">
+                <p>View Showcase</p>
+                <svg width="12" height="17" viewBox="0 0 12 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.25 3.53516C10.6562 3.53516 11 3.87891 11 4.28516V11.7852C11 12.2227 10.6562 12.5352 10.25 12.5352C9.8125 12.5352
+                      9.5 12.2227 9.5 11.7852V6.09766L2.28125 13.3164C1.96875 13.6289 1.5 13.6289 1.21875 13.3164C0.90625 13.0352 0.90625
+                      12.5664 1.21875 12.2852L8.4375 5.06641H2.75C2.3125 5.06641 2 4.72266 2 4.31641C2 3.87891 2.3125 3.56641 2.75
+                      3.56641H10.25V3.53516Z"/>
+                </svg>
+              </button>
+            </div>
+            </div>
+
+            <div class="showcase-card">
+            <div class="showcase-card-content">
+              <p class="date">May 2024</p>
+              <h3 class="fs-secondary-heading ff-accent">Berklee LMS Redesign</h3>
+                <div class="tags">
+                  <div class="tag" data-color="light">Software Design</div>
+                  <div class="tag" data-color="light">Design System</div>
+                </div>
+              
+              <img class="showcase-img" src="assets/uploads/berklee-featured.png" alt="">
+            </div>
+            <div class="button-wrapper">
+              <button class="button videoBtn" data-video-id="3mjazQLWJZg">
+                <p>View Showcase</p>
+                <svg width="12" height="17" viewBox="0 0 12 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.25 3.53516C10.6562 3.53516 11 3.87891 11 4.28516V11.7852C11 12.2227 10.6562 12.5352 10.25 12.5352C9.8125 12.5352
+                      9.5 12.2227 9.5 11.7852V6.09766L2.28125 13.3164C1.96875 13.6289 1.5 13.6289 1.21875 13.3164C0.90625 13.0352 0.90625
+                      12.5664 1.21875 12.2852L8.4375 5.06641H2.75C2.3125 5.06641 2 4.72266 2 4.31641C2 3.87891 2.3125 3.56641 2.75
+                      3.56641H10.25V3.53516Z"/>
+                </svg>
+              </button>
+            </div>
+            </div>
+
+              <div class="showcase-card">
+            <div class="showcase-card-content">
+              <p class="date">September 2023</p>
+              <h3 class="fs-secondary-heading ff-accent">STL Startup Week Website Redesign</h3>
+                <div class="tags">
+                  <div class="tag" data-color="light">Web Design</div>
+                  <div class="tag" data-color="light">Web Development</div>
+                </div>
+              
+              <img class="showcase-img" src="assets/uploads/stlsw-featured.png" alt="">
+            </div>
+            <div class="button-wrapper">
+              <button class="button">
+                <a href="https://www.stlouisstartupweek.com" target="_blank">
+                  <p>Visit Website</p>
+                  <svg width="12" height="17" viewBox="0 0 12 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.25 3.53516C10.6562 3.53516 11 3.87891 11 4.28516V11.7852C11 12.2227 10.6562 12.5352 10.25 12.5352C9.8125 12.5352
+                        9.5 12.2227 9.5 11.7852V6.09766L2.28125 13.3164C1.96875 13.6289 1.5 13.6289 1.21875 13.3164C0.90625 13.0352 0.90625
+                        12.5664 1.21875 12.2852L8.4375 5.06641H2.75C2.3125 5.06641 2 4.72266 2 4.31641C2 3.87891 2.3125 3.56641 2.75
+                        3.56641H10.25V3.53516Z"/>
+                  </svg>
+                </a>
+              </button>
+            </div>
+            </div>
+
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+        
+
+        <!-- Modal Structure -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="video-wrapper">
+      <iframe id="youtubePlayer" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+        
+      </main>

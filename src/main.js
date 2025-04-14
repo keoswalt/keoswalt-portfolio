@@ -46,3 +46,39 @@ navLink.forEach(link => {
       }
     });
   }
+
+
+  // Video Modal
+
+  const modal = document.getElementById("videoModal");
+  const closeBtn = document.querySelector(".close");
+  const iframe = document.getElementById("youtubePlayer");
+
+  // Attach click event to all video buttons
+  document.querySelectorAll(".videoBtn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const videoId = btn.getAttribute("data-video-id");
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      modal.style.display = "flex";
+    });
+  });
+
+  // Close modal and stop video
+  function closeModal() {
+    iframe.src = "";
+    modal.style.display = "none";
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+
+
+
+
+
