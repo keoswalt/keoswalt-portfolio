@@ -51,7 +51,7 @@ navLink.forEach(link => {
   // Video Modal
 
   const modal = document.getElementById("videoModal");
-  const closeBtn = document.querySelector(".close");
+  const closeBtn = document.querySelector(".close-btn");
   const iframe = document.getElementById("youtubePlayer");
 
   // Attach click event to all video buttons
@@ -69,7 +69,7 @@ navLink.forEach(link => {
     modal.style.display = "none";
   }
 
-  closeBtn.addEventListener("click", closeModal);
+  closeBtn.addEventListener('click', closeModal);
 
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
