@@ -1237,9 +1237,11 @@ ol.list-spacing {
 
 .wave-contents {
   padding-top: 6rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin-bottom: -2px;
 }
 
 .wave-contents h2 {
