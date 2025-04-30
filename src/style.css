@@ -847,6 +847,10 @@ ol.list-spacing {
   width: 100%;
 }
 
+.showcase-card .button-wrapper {
+  flex-direction: column;
+}
+
 @container card-gallery (min-width: 700px) {
   .showcase-card {
     flex: 0 0 calc(50% - 20px); /* 2 per row */
