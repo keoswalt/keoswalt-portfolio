@@ -671,7 +671,6 @@ ol.list-spacing {
 
 .tech-stack {
   display: flex;
-  width: 25.625rem;
   align-items: flex-start;
   align-content: flex-start;
   gap: 0.875rem;
