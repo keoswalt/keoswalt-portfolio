@@ -1485,6 +1485,12 @@ ol.list-spacing {
   text-align: left;
 }
 
+@media (max-width: 50em) {
+  .cs-list ol {
+    padding-inline: 2rem;
+  }
+}
+
 .cs-theme-list {
   display: flex;
   flex-direction: column;
