@@ -1486,7 +1486,7 @@ ol.list-spacing {
 }
 
 @media (max-width: 50em) {
-  .cs-list ol {
+  .cs-list ol, .cs-list ul {
     padding-inline: 2rem;
   }
 }
