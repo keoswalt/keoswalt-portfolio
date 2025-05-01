@@ -179,6 +179,10 @@ svg {
   background: var(--color-red-100);
 }
 
+.bg-yellow {
+  background: var(--color-yellow-100);
+}
+
 .bg-green {
   background: var(--color-green-100);
 }
@@ -1322,6 +1326,151 @@ ol.list-spacing {
   gap: 1rem;
 }
 
+
+/* Case Study Styles */
+
+.cs-even-col {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cs-even-col[data-align="top"] {
+  align-items: flex-start;
+}
+
+.cs-even-col[data-align="center"] {
+  align-items: center;
+}
+
+.cs-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cs-width-50 {
+  width: 50%;
+}
+
+.cs-width-75 {
+  width: 75%;
+}
+
+.cs-width-100 {
+  width: 100%;
+}
+
+@media (max-width: 50em) {
+
+  .cs-even-col {
+    flex-direction: column;
+  }
+
+  .cs-width-50 {
+    width: 100%;
+  }
+
+  .cs-width-75 {
+    width: 100%;
+  }
+  }
+
+  .cs-padding-75 {
+    padding-block: .75rem;
+  }
+
+.cs-padding-1 {
+  padding-block: 1rem;
+}
+
+.cs-padding-2 {
+  padding-block: 2rem;
+}
+
+.cs-full-stripe-bar {
+  border-top: 1px solid var(--color-black-100);
+  border-bottom: 1px solid var(--color-black-100);
+}
+
+.cs-full-stripe-bar[data-color="light"] {
+  border-color: var(--color-cream-100);
+}
+
+.cs-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cs-heading[data-align="center"] {
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 50em) {
+  .cs-heading {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.cs-content-emphasis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 4rem;
+}
+
+@media (max-width: 50em) {
+  .cs-content-emphasis {
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+}
+
+.cs-color-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border: 3px solid var(--color-black-100);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (max-width: 50em) {
+  .cs-color-card {
+    gap: 1rem;
+  }
+}
+
+.cs-color-card[data-color="blue"] {
+  background: var(--color-blue-100);
+  color: var(--color-cream-100)
+}
+
+.cs-color-card[data-color="yellow"] {
+  background: var(--color-yellow-100);
+}
+
+.cs-color-card[data-color="black"] {
+  background: var(--color-black-100);
+  color: var(--color-cream-100);
+}
+
+.cs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-align: left;
+}
 
 
 /* 
