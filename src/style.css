@@ -301,6 +301,10 @@ svg {
   padding-top: 2rem;
 }
 
+.padding-top-500 {
+  padding-top: 5rem;
+}
+
 .padding-bottom-100 {
   padding-bottom: 1rem;
 }
@@ -316,6 +320,10 @@ svg {
 @media (max-width: 50em) {
   .padding-bottom-500 {
     padding-bottom: 3rem;
+  }
+
+  .padding-top-500 {
+    padding-top: 3rem;
   }
 }
 
@@ -1403,7 +1411,7 @@ ol.list-spacing {
 .cs-heading {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .cs-heading[data-align="center"] {
@@ -1415,6 +1423,7 @@ ol.list-spacing {
   .cs-heading {
     align-items: center;
     text-align: center;
+    gap: 1rem;
   }
 }
 
@@ -1424,6 +1433,10 @@ ol.list-spacing {
   align-items: center;
   gap: 3rem;
   padding-block: 4rem;
+}
+
+.cs-content-emphasis[data-padding="2"] {
+  padding-block: 2rem;
 }
 
 @media (max-width: 50em) {
@@ -1470,6 +1483,27 @@ ol.list-spacing {
   flex-direction: column;
   gap: 0;
   text-align: left;
+}
+
+.cs-theme-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}
+
+@media (max-width: 50em) {
+  .cs-theme-list {
+    padding-inline: 0;
+  }
+}
+
+.cs-theme {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: flex-start;
 }
 
 
