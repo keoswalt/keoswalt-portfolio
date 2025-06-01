@@ -860,6 +860,8 @@ ol.list-spacing {
 .showcase-card[data-version="full-width"] {
   margin-block: 2rem;
   flex-direction: row;
+  align-items: center;
+  padding-top: 2rem;
 }
 
 .showcase-card-content {
