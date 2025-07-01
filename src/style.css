@@ -1418,6 +1418,10 @@ ol.list-spacing {
   width: 75%;
 }
 
+.cs-width-80 {
+  width: 80%;
+}
+
 .cs-width-100 {
   width: 100%;
 }
@@ -1433,6 +1437,10 @@ ol.list-spacing {
   }
 
   .cs-width-75 {
+    width: 100%;
+  }
+
+  .cs-width-80 {
     width: 100%;
   }
   }
