@@ -48,34 +48,89 @@ navLink.forEach(link => {
   }
 
 
-  // Video Modal
-
+  // Video Modal (only if modal elements are present)
   const modal = document.getElementById("videoModal");
   const closeBtn = document.querySelector(".close-btn");
   const iframe = document.getElementById("youtubePlayer");
 
-  // Attach click event to all video buttons
-  document.querySelectorAll(".videoBtn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const videoId = btn.getAttribute("data-video-id");
-      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-      modal.style.display = "flex";
+  if (modal && closeBtn && iframe) {
+    // Attach click event to all video buttons
+    document.querySelectorAll(".videoBtn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const videoId = btn.getAttribute("data-video-id");
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        modal.style.display = "flex";
+      });
+    });
+
+    // Close modal and stop video
+    function closeModal() {
+      iframe.src = "";
+      modal.style.display = "none";
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
+// Hotspot Image Interaction
+if (document.querySelector('.hotspot-wrapper')) {
+  const hotspotBtns = document.querySelectorAll('.hotspot-btn');
+  const hotspotTips = document.querySelectorAll('.hotspot-tip');
+
+  /**
+   * Close all open tooltips and reset button states
+   */
+  const closeAllTips = () => {
+    hotspotTips.forEach((tip) => {
+      tip.removeAttribute('data-show');
+      tip.setAttribute('aria-hidden', 'true');
+    });
+    hotspotBtns.forEach((btn) => {
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  hotspotBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent body click listener from firing
+      const tipId = btn.getAttribute('data-tooltip');
+      const tipEl = document.getElementById(tipId);
+      const isOpen = tipEl.hasAttribute('data-show');
+
+      // Toggle visibility
+      closeAllTips();
+      if (!isOpen) {
+        tipEl.setAttribute('data-show', '');
+        tipEl.setAttribute('aria-hidden', 'false');
+        btn.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 
-  // Close modal and stop video
-  function closeModal() {
-    iframe.src = "";
-    modal.style.display = "none";
-  }
+  // Close tooltips when clicking outside
+  document.body.addEventListener('click', closeAllTips);
 
-  closeBtn.addEventListener('click', closeModal);
-
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      closeModal();
+  // Close tooltips when pressing Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeAllTips();
     }
   });
+
+  // Close buttons inside tooltips
+  document.querySelectorAll('.tip-close').forEach((closeBtn) => {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeAllTips();
+    });
+  });
+}
 
 
 

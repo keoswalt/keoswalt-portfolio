@@ -387,22 +387,6 @@ ol.list-spacing {
   }
 }
 
-@media (max-width: 50em) {
-  .desktop-only {
-    display: none;
-  }
-}
-
-.mobile-only {
-  display: none;
-}
-
-@media (max-width: 50em) {
-  .mobile-only {
-    display: block;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   position: absolute !important;
@@ -1571,6 +1555,75 @@ ol.list-spacing {
 }
 
 
+/* Hotspot Image Component */
+
+.hotspot-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hotspot-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Numbered circular buttons */
+.hotspot-btn {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--color-blue-100);
+  color: var(--color-cream-100);
+  border: none;
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.hotspot-btn:hover,
+.hotspot-btn:focus-visible {
+  background: var(--color-black-50);
+}
+
+/* Tooltip */
+.hotspot-tip {
+  position: absolute;
+  max-width: 45ch;
+  background: var(--color-black-100);
+  color: var(--color-cream-100);
+  padding: 1rem 2.5rem 1rem 1.25rem;
+  margin: 8px;
+  border: 3px solid var(--color-blue-100);
+  border-radius: 5px;
+  font-size: var(--fs-300);
+  z-index: 20;
+  display: none; /* hidden by default */
+}
+
+.hotspot-tip[data-show] {
+  display: block;
+}
+
+.tip-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
 /* 
 
 Commenting out with new CMS functionality
@@ -1613,3 +1666,22 @@ Commenting out with new CMS functionality
   width: 100%;
   height: auto;
 } */
+
+
+/* MOST SPECIFIC - MUST BE AT BOTTOM */
+
+@media (max-width: 50em) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .mobile-only {
+    display: block;
+  }
+}

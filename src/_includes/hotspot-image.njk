@@ -1,0 +1,16 @@
+<figure class="hotspot-wrapper">
+  <img class="hotspot-bg" src="{{ image }}" alt="{{ alt }}">
+  {# Iterate over the hotspot data passed from the parent template #}
+  {% for spot in hotspots %}
+    {# Circular number button #}
+    <button class="hotspot-btn" style="top: {{ spot.top }}%; left: {{ spot.left }}%;" data-tooltip="hs-tip-{{ loop.index }}" aria-expanded="false">
+      <span>{{ loop.index }}</span>
+    </button>
+
+    {# Corresponding tooltip #}
+    <div class="hotspot-tip" id="hs-tip-{{ loop.index }}" style="top: calc({{ spot.top }}% + 2.5rem); left: {{ spot.left }}%;" aria-hidden="true" role="dialog">
+      {{ spot.text | safe }}
+      <button class="tip-close" aria-label="Close">&times;</button>
+    </div>
+  {% endfor %}
+</figure> 
