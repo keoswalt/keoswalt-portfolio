@@ -860,6 +860,10 @@ ol.list-spacing {
   width: 100%;
 }
 
+.showcase-img[data-padding="1"] {
+  padding: 1rem;
+}
+
 .showcase-fw-img {
   display: flex;
   flex-direction: column;
