@@ -817,7 +817,7 @@ ol.list-spacing {
   container-type: inline-size;
   container-name: card-gallery;
   width: 100%;
-  padding-top: 2rem;
+  padding-block: 2rem;
 }
 
 .showcase-cards {
