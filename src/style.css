@@ -520,12 +520,15 @@ ol.list-spacing {
   font-size: var(--fs-body-h2);
   line-height: 1.2;
   color: var(--color-black-50);
+  text-align: right;
+  width: 80vw;
 }
 
 @media (max-width: 50em) {
   .site-subhead {
     font-size: var(--fs-400);
     text-align: center;
+    width: unset;
   }
 }
 
