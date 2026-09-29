@@ -1378,6 +1378,11 @@ ol.list-spacing {
 
 /* Case Study Styles */
 
+/* Opt-in rounded images — add to a page's <main> to round every image inside it */
+.cs-rounded-images img {
+  border-radius: 12px;
+}
+
 .cs-even-col {
   display: flex;
   flex-direction: row;
@@ -1501,8 +1506,10 @@ ol.list-spacing {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
   width: 100%;
   border: 3px solid var(--color-black-100);
+  border-radius: 5px;
   gap: 2rem;
   padding: 2rem;
 }
@@ -1520,11 +1527,17 @@ ol.list-spacing {
 
 .cs-color-card[data-color="yellow"] {
   background: var(--color-yellow-100);
+  color: var(--color-black-100);
 }
 
 .cs-color-card[data-color="black"] {
   background: var(--color-black-100);
   color: var(--color-cream-100);
+}
+
+.cs-color-card[data-color="cream"] {
+  background: var(--color-cream-100);
+  color: var(--color-black-100);
 }
 
 .cs-list {
@@ -1538,6 +1551,13 @@ ol.list-spacing {
   .cs-list ol, .cs-list ul {
     padding-inline: 2rem;
   }
+}
+
+/* Indent nested lists inside a cs-list item */
+.cs-list li ul,
+.cs-list li ol {
+  padding-inline-start: 2rem;
+  padding-block: 0.5rem;
 }
 
 .cs-theme-list {
